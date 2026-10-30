@@ -127,7 +127,7 @@ fn main() {
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             primary_window: Some(Window {
                 title: "bevy_light_grid — light your AI can read".into(),
-                // 0.19 takes physical pixels as `u32` — there is no `(f32, f32)` conversion.
+                // Bevy takes physical pixels as `u32` here — there is no `(f32, f32)` conversion.
                 resolution: ((W as f32 * CELL) as u32, (H as f32 * CELL) as u32).into(),
                 ..default()
             }),

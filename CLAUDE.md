@@ -24,8 +24,8 @@ The two passes are split on cost, and that split is load-bearing: `bake` is expe
 
 ## Rules
 
-- **Bevy 0.19 is pinned.** Read the vendored `bevy_math-0.19.0` / `bevy_ecs-0.19.0` source, not bevy.org — that documents `main` and has been wrong for this pin more than once.
-- Consult Bevy documentation often. It can be found at codex_fs/offline_reference_docs/bevy-0.19-book/
+- **Bevy 0.20 is pinned** (since 2026-10-29, for bevy_emerge#103: the editor hosts this crate and is on 0.20). Read the vendored `bevy_math-0.20.0` / `bevy_ecs-0.20.0` source and `bevy-0.20.0/_release-content/migration-guides/`, not bevy.org — that documents `main` and has been wrong for this pin more than once.
+- The offline book at codex_fs/offline_reference_docs/bevy-0.19-book/ predates 0.20: use it for concepts, and the 0.20 source for any API.
 - **No `unwrap()`**, no `expect` on caller data, no panicking index — cell coordinates come from gameplay.
 - **One path per feature.** No fallbacks, no legacy shims, no stub placeholders.
 
