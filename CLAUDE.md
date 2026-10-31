@@ -4,7 +4,7 @@ An illuminance grid your **creatures** can read: a CPU scalar field over cells t
 
 ## Source of truth
 
-The source of truth for this crate is [`Ladvien/foundation_vs_slop`](https://github.com/Ladvien/foundation_vs_slop) at `crates/bevy_light_grid/`. If you are reading this in a standalone `Ladvien/bevy_light_grid` checkout, that is a read-only `git subtree split` mirror — **changes made here cannot be pulled back**. Make them upstream.
+The source of truth for this crate is [`Ladvien/foundation_vs_slop`](https://github.com/Ladvien/foundation_vs_slop) at `crates/bevy_light_grid/`. If you are reading this in a standalone `bevy-coven/bevy_light_grid` checkout, that is a read-only `git subtree split` mirror — **changes made here cannot be pulled back**. Make them upstream.
 
 ## Build and test
 
@@ -24,7 +24,7 @@ The two passes are split on cost, and that split is load-bearing: `bake` is expe
 
 ## Rules
 
-- **Bevy 0.20 is pinned** (since 2026-10-29, for bevy_emerge#103: the editor hosts this crate and is on 0.20). Read the vendored `bevy_math-0.20.0` / `bevy_ecs-0.20.0` source and `bevy-0.20.0/_release-content/migration-guides/`, not bevy.org — that documents `main` and has been wrong for this pin more than once.
+- **Bevy 0.20 is pinned** (since 2026-10-29, for bevy_grimoire#103: the editor hosts this crate and is on 0.20). Read the vendored `bevy_math-0.20.0` / `bevy_ecs-0.20.0` source and `bevy-0.20.0/_release-content/migration-guides/`, not bevy.org — that documents `main` and has been wrong for this pin more than once.
 - The offline book at codex_fs/offline_reference_docs/bevy-0.19-book/ predates 0.20: use it for concepts, and the 0.20 source for any API.
 - **No `unwrap()`**, no `expect` on caller data, no panicking index — cell coordinates come from gameplay.
 - **One path per feature.** No fallbacks, no legacy shims, no stub placeholders.
