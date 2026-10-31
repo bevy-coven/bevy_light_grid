@@ -32,3 +32,5 @@ The two passes are split on cost, and that split is load-bearing: `bake` is expe
 ## In the monorepo
 
 The game wraps this as `LightField { core, dirty }` (`src/light.rs:341`). Note what stays on the game side: `dirty` is bake-gating for *this game's* fixtures, and a grid that tracked it would be guessing at a schedule it does not own. Root `CLAUDE.md` and `TESTING.md` carry the project-wide rules; neither is part of this mirror.
+
+README and docs follow https://github.com/bevy-coven/.github/blob/main/DOCUMENTATION.md; a feature is not done until its README line and, if visible, its GIF exist.

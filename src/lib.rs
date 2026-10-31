@@ -420,3 +420,8 @@ mod tests {
         assert_eq!(g.sample_cell(IVec2::new(0, 5)), 0.0);
     }
 }
+
+// The README's quick start is compiled as a doctest, so it cannot drift from the API.
+#[cfg(doctest)]
+#[doc = include_str!("../README.md")]
+struct ReadmeDoctests;
