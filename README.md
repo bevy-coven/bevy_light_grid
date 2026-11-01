@@ -63,7 +63,7 @@ The GIF above. `shadow` and `taxis` print the field as text, with no window or G
 
 ## Part of the Coven
 
-`bevy_light_grid` is one of the [Bevy Coven](https://github.com/bevy-coven) crates; [`bevy_lights`](https://github.com/bevy-coven/bevy_lights) places the fires and lamps a game draws, and this crate turns them into a field creatures read. How Grimoire, the Coven's editor, uses it is on [its page in the book](https://bevy-coven.github.io/crates/bevy_light_grid.html#use-it-in-grimoire).
+`bevy_light_grid` is one of the [Bevy Coven](https://github.com/bevy-coven) crates; [`bevy_lights`](https://github.com/bevy-coven/bevy_lights) places the fires and lamps a game draws, and this crate turns them into a field creatures read. How the Cauldron, the Coven's editor, uses it is on [its page in the book](https://bevy-coven.github.io/crates/bevy_light_grid.html#use-it-in-the-cauldron).
 
 ## Bevy compatibility
 
